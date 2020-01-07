@@ -1,0 +1,25 @@
+{
+  "name": "electron-viewerjs",
+  "version": "1.0.0",
+  "description": "The PDF/ODT/ODP embedded viewer based on ViewerJS for Electron",
+  "main": "index.js",
+  "repository": {
+    "type" : "git",
+    "url" : "https://github.com/xenirio/electron-viewerjs.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "pdf",
+    "odt",
+    "odp",
+    "viewer",
+    "viewerjs",
+    "PDF.js",
+    "electron",
+    "embedded"
+  ],
+  "author": "Vee Jirapongcharoenlarb",
+  "license": "MIT"
+}
