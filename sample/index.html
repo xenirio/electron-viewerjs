@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>The Electron Embedded Viewer</title>
+</head>
+<body style="height: calc(100vh - 150px)">
+  <h1>This is embedded of ViewerJS</h1>
+  <div style="width: calc(33% - 16px); margin: 0 8px; float: left; height: 100%;">
+    <h3>Example 1 : Load PDF when initialize</h3>
+    <div id="sample-viewer-1" style="height: 100%;"></div>
+  </div>
+  <div style="width: calc(33% - 16px); margin: 0 14px; float: left; height: 100%;">
+    <h3>Example 2 : Load PDF by data-src="./sampledoc.pdf"</h3>
+    <div id="sample-viewer-2" style="height: 100%;" data-src="./sample-pdf2-doc.pdf"></div>
+  </div>
+  <div style="width: calc(33% - 16px); margin: 0 8px; float: right; height: 100%;">
+    <h3>Example 3 : Load ODT/ODP/PDF document</h3>
+    <div id="sample-viewer-3" style="height: 100%;"></div>
+  </div>
+  <!-- You can also require other files to run in this process -->
+  <script src="./renderer.js"></script>
+</body>
+</html>
