@@ -23,8 +23,8 @@ mainWindow = new BrowserWindow({
 Declare container in `index.html`
 
 ```html
-<div id="sample-viewer-1"></div>
-<div id="sample-viewer-2" data-src="./sample-pdf2-doc.pdf"></div>
+<div id="sample-viewer-1" style="width: 100%; height: 100%;"></div>
+<div id="sample-viewer-2" data-src="./sample-pdf2-doc.pdf" style="width: 100%; height: 100%;"></div>
 ```
 
 Declare `viewer` in `renderer.js`
