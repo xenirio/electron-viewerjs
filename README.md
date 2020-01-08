@@ -1,6 +1,8 @@
 # Electron ViewerJS
 The PDF/ODT/ODP embedded viewer based on ViewerJS for Electron.
 
+![screen-shot-1](https://user-images.githubusercontent.com/241133/71978767-ba244b00-324e-11ea-8d77-ac934f3ef61a.png)
+
 ## Installation
 ```bash
 $ npm i --save electron-viewerjs
