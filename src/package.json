@@ -1,6 +1,6 @@
 {
   "name": "electron-viewerjs",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "The PDF/ODT/ODP embedded viewer based on ViewerJS for Electron",
   "main": "index.js",
   "repository": {
