@@ -1,18 +1,24 @@
 class Viewer {
-    viewerjs = "ViewerJS/index.html";
+    viewerjs = `node_modules/electron-viewerjs/ViewerJS/index.html`;
     
     constructor(context, options) {
         this.context = context;
-        let webview = `<webview src="${this.viewerjs}" style="width: 100%; height: 100%;"></webview>`;
+        
+        let webview = document.createElement("webview");
+        webview.setAttribute("src", this.viewerjs);
+        webview.setAttribute("style", "width: 100%; height: 100%;");
 
         this.context.append(webview);
-        if(options.path)
-            this.loadSync(options.path);
+        this.webview = webview;
+
+        let path = options.path || this.context.getAttribute("data-src");
+        if(path)
+            this.loadSync(path);
     }
 
     loadSync(path) {
-        this.webview.replace(/src=".+"/gi, `src="${this.viewerjs}#${path}"`);
+        this.webview.setAttribute("src", `${this.viewerjs}#../../../${path}`);
     }
 }
 
-exports.new = (id, options  = {}) => new Viewer(id, options);
+exports.new = (context, options  = {}) => new Viewer(context, options);
